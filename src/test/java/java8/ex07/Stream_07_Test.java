@@ -42,7 +42,7 @@ public class Stream_07_Test {
     // TODO .parallel()
     Function<List<Pizza>, List<Pizza>> parallelFilterPizza = pizzas -> pizzas.parallelStream()
             .filter(pizza -> pizza.getPrice() >= 1000)
-            .collect(Collectors.toList());;
+            .collect(Collectors.toList());
 
     // TODO exécuter le test pour visualiser le temps d'exécution
     @Test
